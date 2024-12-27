@@ -1,0 +1,6 @@
+^C:\VERTEX\SP\SRC\PUBLIC\TIER0\POINTEROVERRIDE.ASM
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX64\x86\ml.exe" /safeseh /c /Cp /Zi /Fo".\Release_mod_sdk2013ce\\pointeroverride.obj" "C:\Vertex\sp\src\public\tier0\pointeroverride.asm"
+^C:\VERTEX\SP\SRC\GAME\CLIENT\CLIENT_SDK2013CE.VPC
+if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "client_sdk2013ce.vcxproj"
+if ERRORLEVEL 1 exit /b 1
+echo crc_complete > C:\Vertex\sp\src\game\client\client_sdk2013ce.vpc.sentinel
